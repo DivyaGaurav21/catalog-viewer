@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CatalogViewer from './CatalogViewer'
 
-function App() {
+const imageData = [
+  {
+    src: 'https://images.pexels.com/photos/1382732/pexels-photo-1382732.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Image 1',
+    details: 'Details about image 1',
+  },
+  {
+    src: 'https://images.pexels.com/photos/206557/pexels-photo-206557.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Image 2',
+    details: 'Details about image 2',
+  },
+  {
+    src: 'https://images.pexels.com/photos/1024981/pexels-photo-1024981.jpeg?auto=compress&cs=tinysrgb&w=800',
+    details: 'Details about image 3',
+  },
+  {
+    src: 'https://images.pexels.com/photos/1382732/pexels-photo-1382732.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Image 1',
+    details: 'Details about image 1',
+  },
+  {
+    src: 'https://images.pexels.com/photos/206557/pexels-photo-206557.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Image 2',
+    details: 'Details about image 2',
+  },
+  {
+    src: 'https://images.pexels.com/photos/1024981/pexels-photo-1024981.jpeg?auto=compress&cs=tinysrgb&w=800',
+    details: 'Details about image 3',
+  },
+];
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>DG</p>
+      <CatalogViewer imageData={imageData}/>
     </div>
-  );
+    
+  )
 }
 
-export default App;
+export default App
