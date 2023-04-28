@@ -5,13 +5,13 @@ const Thumbnail = ({ src, alt, isSelected, onClick }) => {
   return (
     <Box
       onClick={onClick}
-      m={1}
+      m={3}
       style={{
         border: isSelected ? '2px solid #008CBA' : '2px solid #ddd',
         borderRadius: '5px',
         cursor: 'pointer',
-        height: '80px',
-        width: '80px',
+        height: '65px',
+        width: '100px',
         overflow: 'hidden',
       }}
     >
